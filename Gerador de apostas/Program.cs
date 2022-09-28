@@ -37,7 +37,7 @@ namespace Gerador_de_apostas
                     
                     while (numeros.Count < quantidade)   //vai loopar a geração até termos a quantidade de numeros que o usuário precisa
                     {
-                        int numeroGerado = rnd.Next(1, range); //variável temporária para armazenar o número gerado
+                        int numeroGerado = rnd.Next(1, range++); //variável temporária para armazenar o número gerado
 
 
                         if (!numeros.Contains(numeroGerado)) //vai checar se o número gerado já existe na Lista
